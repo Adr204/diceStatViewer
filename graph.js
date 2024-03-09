@@ -101,7 +101,7 @@ class Graph {
             if(text == "100") text = "00";
             let textWidth = ctx.measureText(text).width;
 
-            ctx.fillText(text, canvas.width / data.length * (i+0.5) - textWidth / 2, canvas.height);
+            ctx.fillText(text, canvas.width / data.length * (i+0.5) - textWidth / 2, canvas.height - this.cellHeight / 2);
         });
     }
     putGraph(graph, canvas) {
